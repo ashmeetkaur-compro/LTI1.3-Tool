@@ -10,12 +10,12 @@ router.get('/oidc', controller.cretaeOidcResponse);
 router.post('/oidc', controller.cretaeOidcResponse);
 
 //TOOL: Generate Token
-app.post("/oauth2/token", controller.generateToken);
+router.post("/oauth2/token", controller.generateToken);
 
 //TOOL: Validate launch request and launch
-app.post('/project/submit', controller.launchTool);
+router.post('/project/submit', controller.launchTool);
 
 //TOOL: Display launch page
-app.get("/project/submit", controller.displayLaucnhPage);
+router.get("/project/submit", controller.displayLaucnhPage);
 
 module.exports = router;

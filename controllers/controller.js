@@ -29,3 +29,9 @@ exports.launchTool = (req,res) => {
   let basic_decoded = jwt.decode(jwt_string, {complete: true});
 };
 
+exports.generateToken = (req,res) => { 
+};
+
+exports.displayLaucnhPage = (req,res) => {
+};
+
