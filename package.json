@@ -1,0 +1,15 @@
+{
+  "name": "ltiv1p3-tool",
+  "version": "1.0.0",
+  "description": "LTI1.3 Tool Provider",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "lti-node-library": "^0.1.0"
+  }
+}
