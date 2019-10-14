@@ -61,17 +61,6 @@ var payload = {
   })
 };
 
-function create_unique_string(length, signed) {
-  let unique_string = '';
-  const possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-  for(let i = 0; i < length; i++) {
-    unique_string += possible.charAt(Math.floor(Math.random() * possible.length));
-  }
-  //TODO: if signed === true, sign the string with our private key
-  return unique_string;
-}
-
-
 exports.validateLaunch = (req,res) => {
   jwt.verify(req.body.id_token, platformData.publicKey, (err, decoded) => {
     if(err) {
