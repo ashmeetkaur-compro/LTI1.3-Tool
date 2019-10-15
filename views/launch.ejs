@@ -13,21 +13,9 @@
         <h2> LTI 1.3 Tool Launch successful</h2>
         <h3>List of Parameters</h3>
         <ul>
-            {{#each params}}
-                {{#ifObject this}}
-                    <li>{{@key}} : {
-                        <ul>
-                            {{#each this}}
-                                <li>{{@key}} : {{this}}</li>
-                            {{/each}}
-                        </ul>
-                        }
-                    </li>
-                {{/ifObject}}
-                {{#notIfObject this}}
-                    <li>{{@key}} : {{this}}</li>
-                {{/notIfObject}}
-            {{/each}}
+            <% params.forEach(function(drink) { %>
+                <li><%= drink.key %> : <%= drink.value %></li>
+            <% }); %>
         </ul>
     </body>
 </html>
