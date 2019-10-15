@@ -1,3 +1,4 @@
 {
-  "launch_url" : "https://localhost:5000/project/submit"
+  "launch_url" : "https://localhost:5000/project/submit",
+  "display_url" : "https://localhost:5000/project/submit"
 }

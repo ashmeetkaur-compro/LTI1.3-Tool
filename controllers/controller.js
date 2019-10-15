@@ -58,7 +58,7 @@ var payload = {
   return res.render('initLogin.ejs' ,{
     loginResParams : initLoginParams, 
     action: platformData.oidc_auth_url
-  })
+  });
 };
 
 exports.validateLaunch = (req,res) => {

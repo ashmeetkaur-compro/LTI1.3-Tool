@@ -4,7 +4,8 @@
   "description": "LTI1.3 Tool Provider",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
   },
   "author": "",
   "license": "ISC",
@@ -13,5 +14,8 @@
     "express": "^4.17.1",
     "lti-node-library": "^0.1.0",
     "nonce-generator": "^1.0.2"
+  },
+  "engines": {
+    "node": "8.11.2"
   }
 }
