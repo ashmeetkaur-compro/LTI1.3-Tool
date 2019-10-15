@@ -68,11 +68,11 @@ exports.validateLaunch = (req,res) => {
     res.render('error.ejs' , {invalidSignature : true});
     }
 
-    if (decoded["https://purl.imsglobal.org/spec/lti/claim/message_type"] != "LtiResourceLinkRequest" || decoded["https://purl.imsglobal.org/spec/lti/claim/version"] != "1.3.0" || decoded["https://purl.imsglobal.org/spec/lti/claim/deployment_id"] != loggedinPlatform.deployment_id || decoded["https://purl.imsglobal.org/spec/lti/claim/target_link_uri"] != loggedinPlatform.tool_link_url || !(decoded["https://purl.imsglobal.org/spec/lti/claim/resource_link"]) || !(decoded["https://purl.imsglobal.org/spec/lti/claim/roles"])) {
-            return res.render('error.ejs', {
-                badRequest: true
-            });
-        }
+    // if (decoded["https://purl.imsglobal.org/spec/lti/claim/message_type"] != "LtiResourceLinkRequest" || decoded["https://purl.imsglobal.org/spec/lti/claim/version"] != "1.3.0" || decoded["https://purl.imsglobal.org/spec/lti/claim/deployment_id"] != loggedinPlatform.deployment_id || decoded["https://purl.imsglobal.org/spec/lti/claim/target_link_uri"] != loggedinPlatform.tool_link_url || !(decoded["https://purl.imsglobal.org/spec/lti/claim/resource_link"]) || !(decoded["https://purl.imsglobal.org/spec/lti/claim/roles"])) {
+    //         return res.render('error.ejs', {
+    //             badRequest: true
+    //         });
+    //     }
     
     return res.redirect(url.format({
       pathname: toolData.display_url,
