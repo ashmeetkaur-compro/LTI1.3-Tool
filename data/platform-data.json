@@ -2,6 +2,6 @@
   "iss" : "https://lti-ri.imsglobal.org",
   "client_id" : "testClient",
   "oidc_auth_url" : "https://lti-ri.imsglobal.org/platforms/522/authorizations/new",
-  "tool-redirect-url": "https://secure-sea-62530.herokuapp.com/project/submit",
+  "tool-redirect-url": "https://secure-sea-62530.herokuapp.com/submit",
   "public_key" : "-----BEGIN PUBLIC KEY----- MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArZ4vL8C5G3u2rRbn+qMJ 91ZKC81T8lzvN7oWcGIF+zFO1A61bGg6t22sHS3lT+xj+b+9p5mhQxsd5s3eRwMF YTU1v+QTnxPMRA/ufoLd9x8IXqPR63ZjIH6aIoA6cMoUVE/44qBdGlKnqnkneGRp KapX+HQPSnu0+iYefS2id3Oj2gSyEeZ3hUuZY73pNVA1tuc9jcolxCnilgBhQYWt qTEgkRsa67osvx1HXyHDRLS5HzdzAH+AY+Hc5lJ83qrq3AMNAx4A10Sc8FOSjnio vtNDW5tonjaQf4H3tVNgIflOavCLz7HuO3Uy4sL28DvO7IAj2VEMJNwvPFZcHY3z UwIDAQAB -----END PUBLIC KEY-----"
 }

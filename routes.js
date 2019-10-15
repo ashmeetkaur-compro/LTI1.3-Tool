@@ -10,9 +10,9 @@ router.get('/oidc', controller.cretaeOidcResponse);
 router.post('/oidc', controller.cretaeOidcResponse);
 
 //TOOL: Validate launch request and launch
-router.post('/project/submit', controller.validateLaunch);
+router.post('/submit', controller.validateLaunch);
 
 //TOOL: Display launch page
-router.get("/project/submit", controller.displayLaucnhPage);
+router.get("/submit", controller.displayLaucnhPage);
 
 module.exports = router;
