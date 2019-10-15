@@ -12,6 +12,10 @@
     <body>
         <h2> LTI 1.3 Tool Launch successful</h2>
         <p>Hello</p>
-        <p><%= params.name %></p>
+        <ul>
+            <% params.forEach(function(param) { %>
+                <li><%= param.key %> : <%= param.value %></li>
+            <% }); %>
+        </ul>
     </body>
 </html>
