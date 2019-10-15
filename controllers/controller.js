@@ -3,7 +3,7 @@ const nonce = require('nonce-generator');
 const platformData = require('../data/platform-data');
 const toolData = require('../data/toolData');
 const keys = require('../data/keys');
-const url = require('url')
+const url = require('url');
 
 exports.defaultLaunch = (req,res) => {
   res.send("Default Launch successful");
@@ -76,6 +76,8 @@ exports.validateLaunch = (req,res) => {
 };
 
 exports.displayLaucnhPage = (req,res) => {
-  return res.render('launch.ejs', {});
+  return res.render('launch.ejs', {
+    params : req.query
+  });
 };
 
