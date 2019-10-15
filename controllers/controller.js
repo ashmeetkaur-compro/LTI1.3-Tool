@@ -82,6 +82,7 @@ exports.validateLaunch = (req,res) => {
 };
 
 exports.displayLaucnhPage = (req,res) => {
+  console.log(req.query)
   return res.render('launch.ejs', {
     params : req.query
   });
