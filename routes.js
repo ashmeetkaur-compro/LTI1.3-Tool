@@ -13,6 +13,6 @@ router.post('/oidc', controller.cretaeOidcResponse);
 router.post('/submit', controller.validateLaunch);
 
 //TOOL: Display launch page
-router.get("/submit", controller.displayLaucnhPage);
+router.get('/submit', controller.displayLaucnhPage);
 
 module.exports = router;

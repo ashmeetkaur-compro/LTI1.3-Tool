@@ -62,7 +62,6 @@ var payload = {
 };
 
 exports.validateLaunch = (req,res) => {
-  console.log("Coming");
   jwt.verify(req.body.id_token, platformData.publicKey, (err, decoded) => {
     if(err) {
     res.render('error.ejs' , {invalidSignature : true});
