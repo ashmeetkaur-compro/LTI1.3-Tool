@@ -73,7 +73,7 @@ exports.validateLaunch = (req,res) => {
     //   query: decoded
     // }));
     console.log(decoded);
-    res.send(decoded);
+    res.send(req.body.id_token);
   });
 };
 
