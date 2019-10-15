@@ -77,7 +77,7 @@ exports.validateLaunch = (req,res) => {
     
     return res.redirect(url.format({
       pathname: toolData.display_url,
-      query: decoded
+      query: decode_payload
     }));
   });
 };
