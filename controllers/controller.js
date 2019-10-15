@@ -77,7 +77,7 @@ exports.validateLaunch = (req,res) => {
 
 exports.displayLaucnhPage = (req,res) => {
   return res.render('launch.ejs', {
-    params : req.query
+    params : req.body
   });
 };
 
