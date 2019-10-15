@@ -76,10 +76,8 @@ exports.validateLaunch = (req,res) => {
 };
 
 exports.displayLaucnhPage = (req,res) => {
-
-  const object = JSON.parse(req.query);
   return res.render('launch.ejs', {
-    params : object
+    params : req.query
   });
 };
 
