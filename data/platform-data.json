@@ -1,5 +1,6 @@
 {
   "iss" : "https://lti-ri.imsglobal.org",
+  "deployment_id" : "123",
   "client_id" : "testClient",
   "oidc_auth_url" : "https://lti-ri.imsglobal.org/platforms/522/authorizations/new",
   "tool-redirect-url": "https://secure-sea-62530.herokuapp.com/submit",
