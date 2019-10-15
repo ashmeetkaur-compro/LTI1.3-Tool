@@ -13,7 +13,6 @@ exports.cretaeOidcResponse = (req,res) => {
   let privateKEY = keys.private_key;
 
   if(req.body.client_id != platformData.client_id) {
-    // res.send(['Issuer invalid: not registered']);
     res.render('error.ejs',{platformNotRegistered : true});
   }
 
