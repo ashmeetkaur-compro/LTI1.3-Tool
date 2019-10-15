@@ -68,12 +68,10 @@ exports.validateLaunch = (req,res) => {
     res.render('error.ejs' , {invalidSignature : true});
     }
     
-    // return res.redirect(url.format({
-    //   pathname: toolData.display_url,
-    //   query: decoded
-    // }));
-    console.log(decoded);
-    res.send(req.body.id_token);
+    return res.redirect(url.format({
+      pathname: toolData.display_url,
+      query: decoded
+    }));
   });
 };
 
