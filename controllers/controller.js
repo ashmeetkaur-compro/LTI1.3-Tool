@@ -68,7 +68,8 @@ exports.validateLaunch = (req,res) => {
     res.render('error.ejs' , {invalidSignature : true});
     }
     
-    res.send(jwt.decode(req.body.id_token, {complete: true}))
+    var decode = jwt.decode(req.body.id_token, {complete: true}).payload;
+    res.send(decode)
     // return res.redirect(url.format({
     //   pathname: toolData.display_url,
     //   query: jwt.decode(req.body.id_token, {complete: true})
