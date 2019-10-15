@@ -13,7 +13,8 @@
     "ejs": "^2.7.1",
     "express": "^4.17.1",
     "lti-node-library": "^0.1.0",
-    "nonce-generator": "^1.0.2"
+    "nonce-generator": "^1.0.2",
+    "url": "^0.11.0"
   },
   "engines": {
     "node": "8.11.2"
