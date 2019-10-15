@@ -62,16 +62,17 @@ var payload = {
 };
 
 exports.validateLaunch = (req,res) => {
-  jwt.verify(req.body.id_token, platformData.publicKey, (err, decoded) => {
-    if(err) {
-    res.render('error.ejs' , {invalidSignature : true});
-    }
+  res.send({hi:'hello'});
+  // jwt.verify(req.body.id_token, platformData.publicKey, (err, decoded) => {
+  //   if(err) {
+  //   res.render('error.ejs' , {invalidSignature : true});
+  //   }
     
-    return res.redirect(url.format({
-      pathname: toolData.display_url,
-      query: decoded
-    }));
-  });
+  //   return res.redirect(url.format({
+  //     pathname: toolData.display_url,
+  //     query: decoded
+  //   }));
+  // });
 };
 
 exports.displayLaucnhPage = (req,res) => {
