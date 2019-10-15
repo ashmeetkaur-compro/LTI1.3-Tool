@@ -12,6 +12,8 @@
     <body>
         <h2> LTI 1.3 Tool Launch successful</h2>
         <h3>List of Parameters</h3>
-        
+        <% Object.keys(params).forEach(function(param) { %>
+            <li>name=<%= param %> : value=<%= loginResParams[param] %></li>  
+        <% }); %>
     </body>
 </html>
