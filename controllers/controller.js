@@ -72,7 +72,7 @@ exports.validateLaunch = (req,res) => {
     //   pathname: toolData.display_url,
     //   query: decoded
     // }));
-
+    console.log(decoded);
     res.send(decoded);
   });
 };
