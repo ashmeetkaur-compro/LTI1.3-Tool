@@ -12,10 +12,9 @@
     <body>
         <h2> LTI 1.3 Tool Launch successful</h2>
         <h3>List of Parameters recieved</h3>
-        <p><%- JSON.stringify(params.https://purl.imsglobal.org/spec/lti/claim/resource_link) %></p>
         <ul>
             <% Object.keys(params).forEach(function(key) { %>
-                <li><%= key %> : <%- JSON.stringify(params[key]) %>
+                <li><%= key %> : <%= params[key] %>
 
                 
                     <% if( typeof params[key] === "object" ) {%>
