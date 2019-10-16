@@ -11,9 +11,10 @@
     </head>
     <body>
         <h2> LTI 1.3 Tool Launch successful</h2>
+        <h3>List of Parameters recieved</h3>
         <ul>
             <% Object.keys(params).forEach(function(key) { %>
-                <li><%= key %></li>
+                <li><%= key %> : <%= params[key] %></li>
             <% }); %>
         </ul>
     </body>
