@@ -16,7 +16,7 @@
             <% Object.keys(params).forEach(function(key) { %>
                 <li><%= key %> : <%= params[key] %>
                 
-                    <% if( typeof params[key] == "object") {%>
+                    <% if( params[key] ) {%>
                        <%- JSON.stringify(params[key]) %> 
                     <% } %>
                 </li>
