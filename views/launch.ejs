@@ -14,7 +14,12 @@
         <h3>List of Parameters recieved</h3>
         <ul>
             <% Object.keys(params).forEach(function(key) { %>
-                <li><%= key %> : <%= params[key] %></li>
+                <li><%= key %> : <%= params[key] %>
+                
+                    <% if( typeof params[key] == "object") {%>
+                       <%- JSON.stringify(params[key]) %> 
+                    }
+                </li>
             <% }); %>
         </ul>
     </body>
