@@ -74,6 +74,10 @@ exports.validateLaunch = (req,res) => {
         badRequest: true
     });
     }
+
+    if(decode_payload['https://purl.imsglobal.org/spec/lti/claim/target_link_uri'] != toolData.launch_url) {
+      throw new Error("Bad request : Redirect url is not valid ");
+    }
     
     return res.redirect(url.format({
       pathname: toolData.display_url,
